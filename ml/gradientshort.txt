@@ -1,0 +1,22 @@
+x=2
+lr= 0.02 #learning rate
+precision = 0.000001
+previous_step_size = 1
+max_iter = 10000
+iters_counter = 0
+gf = lambda x: (x+3)**2
+
+
+import matplotlib.pyplot as plt
+gd= []
+
+while precision < previous_step_size and iters_counter < max_iter:
+    prev = x
+    x = x - lr * gf(prev)
+    previous_step_size = abs(x - prev)
+    iters_counter = iters_counter + 1
+    print('Iteration:', iters_counter, 'Value:', x)
+    gd.append(x)
+
+print('Local Minima:', x)
+plt.plot(range(7056),gd)
