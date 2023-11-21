@@ -12,7 +12,7 @@ from sklearn import preprocessing
 
 # Loading the Dataset- First we load the dataset and find out the number of columns, rows, NULL values, etc.
 
-df = pd.read_csv('Lp3-3/uber.csv')
+df = pd.read_csv('uber.csv')
 df.info()
 df.head()
 df.describe()

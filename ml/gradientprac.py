@@ -12,13 +12,6 @@ def gradient_descent(
     points = [start]
     iters = 0                           #iteration counter
     
-    while step_size > tolerance and iters < n_iter:
-        prev_x = start                  #Store current x value in prev_x
-        start = start - learn_rate * gradient(prev_x) #Grad descent
-        step_size = abs(start - prev_x) #Change in x
-        iters = iters+1                 #iteration count
-        points.append(start)
-    print("The local minimum occurs at", start)
     
     # Create plotting array
     x_ = np.linspace(-7,5,100)

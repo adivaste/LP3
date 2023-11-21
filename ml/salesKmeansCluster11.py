@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.cluster import KMeans
 
-df = pd.read_csv('Lp3-3/sales_data_sample.csv', encoding='latin1')
+df = pd.read_csv('sales_data_sample.csv', encoding='latin1')
 df.head()
 
 df.info()

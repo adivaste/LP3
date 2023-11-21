@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 from sklearn import metrics
 
-df=pd.read_csv('Lp3-3/diabetes.csv')
+df=pd.read_csv('./diabetes.csv')
 
 df.columns
 df.isnull().sum()
